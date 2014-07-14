@@ -1,33 +1,32 @@
 <html>
 	<body>
 
-	<h1 id="Clucker">Clucker</h1>
-
-	<img src = "http://1.bp.blogspot.com/_P8HW4oLvBao/TF1Z7My9Z8I/AAAAAAAAA7E/5FLTGVzyTHE/s1600/CIMG8933.JPG">
-
-	<h2> Contact Us </h2>
+	<div id="ChickenKeyboard">
+		<h2> Talk to us </h2>
+	</div>
 
 	<p> Just because we chickens don’t have ears doesn’t mean we don’t listen. If you’ve got questions, comments or complaints, send ’em our way. </p>
 
-	<form action = "contact.php" method = "post">
-		Your name <br>
-		<input type = "text" name = "cf_name"> <br>
-		Your e-mail <br>
-		<input type = "text" name = "cf_email"> <br>
-		What’s on your mind? <br>
-		<textarea name = "cf_mind"> <br>
-	<input type = "submit" value = "Send">
-	<input type = "reset" value = "Clear">
+	<div class = "contact">
+	<form action = "" method = "post" enctype = "multipart/form-data">
+		<input type = "hidden" name = "action" value = "submit"/> Your name:<br/>
+		<input name = "name" type = "text" value = "" size = "30"> <br/> Your email:<br/>
+		<input name = "email" type = "text" value = "" size = "30"/> <br/> 
+		<p> What kind of clucker are you? </p>
+		<select name = "clucker">
+			<option value = "chicken"> Chicken </option>
+			<option value = "turkey"> Turkey </option>
+			<option value = "prefer"> Prefer not to answer </option>
+			</select>
+			</br>
+			</br>
+		What’s on your mind?<br/>
+		<textarea name ="message" rows = "7" cols = "30"> </textarea> <br/>
+		<input type = "submit" value = "Send email"/>
 	</form>
+	</div>
 
-	<p id="Menu">
-	<a href = "http://localhost:3000/main/home">Home</a>
-	<a href = "http://localhost:3000/main/about">About</a>
-	<a href = "http://localhost:3000/main/index">Index</a>
-	<a href = "http://localhost:3000/main/team">Team</a>
-	<a href = "http://localhost:3000/main/faqs">FAQs</a>
-	<a href = "http://localhost:3000/main/contact">Contact</a>
-	</p>
+	</br>
 
 	</body>
 </html>

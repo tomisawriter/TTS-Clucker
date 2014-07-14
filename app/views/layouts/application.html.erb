@@ -1,14 +1,40 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-  <title>Clucker</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
+	<head>
+  		<title>Clucker</title>
+  		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  		<%= csrf_meta_tags %>
+  		<link href='http://fonts.googleapis.com/css?family=Lobster|Anton|Oswald:400,700|Francois+One|Fjalla+One|Playball' rel='stylesheet' type='text/css'>
+	</head>
 
-</body>
+	<body>
+
+		<div id="logo">
+		CLUCKER.COM
+		</div>
+
+		<ul id="Menu">
+		<li> <a href = "http://localhost:3000/main/home">Home</a> </li>
+		<li> <a href = "http://localhost:3000/main/about">What Is Clucker?</a> </li>
+		<li> <a href = "http://localhost:3000/main/team">About Us</a> </li>
+		<li> <a href = "http://localhost:3000/main/faqs">FAQs</a> </li>
+		<li> <a href = "http://localhost:3000/main/contact">Contact Us</a> </li>
+		<li> <a href = "http://localhost:3000/main/index">Index</a> </li>
+		</ul>
+
+		<button class = "button"> Cluck Here </button>
+
+
+
+	<%= yield %>
+
+		<div id="footer">
+		Copyright &copy; 2014 Colonel Sanders, Inc. 
+		</div>
+
+	</body>
+	
 </html>
