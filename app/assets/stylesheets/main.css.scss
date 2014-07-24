@@ -1,23 +1,102 @@
-#logo {float: left; margin-right: 40px; margin-top: 8px; color: #998100; font-family: "Arial Black"; font-size: 30px; letter-spacing: 0.05em;} 
-#Menu {float: left; margin-right: 40px;}
-#Menu li {float: left; list-style: none; margin-left: 30px; margin-top: 8px; font-family: "Arial"; color: #ffff99; font-size: 15px; letter-spacing: 0.05em;}
-.button {float: right; margin-left: 40px; margin-top: 25px; font-family: "Arial";}
-#HomeChicken {background: url(/assets/HomeChicken.jpg) no-repeat; clear: both; position: relative; display: block; width: 100%; height: 630px; background-size: cover !important;}
-#HomeChicken h2 {text-align: center; font-size: 60px; color: #ffff99; text-shadow: 4px 4px 0px #000; font-family: "Playball", sans-serif; position: absolute; top: 250px; left: 40px; width: 100%; letter-spacing: 0.05em;}
-#ChickenRoad {background: url(/assets/ChickenRoad.jpg) no-repeat; clear: both; position: relative; display: block; width: 100%; height: 630px; background-size: cover !important;}
-#ChickenRoad h2 {text-align: center; font-size: 60px; color: #ffff99; text-shadow: 4px 4px 0px #000; font-family: "Playball", sans-serif; position: absolute; top: 250px; left: 40px; width: 100%; letter-spacing: 0.05em;}
-#BirdBrain {background: url(/assets/BirdBrain.jpg) no-repeat; clear: both; position: relative; display: block; width: 100%; height: 630px; background-size: cover !important;}
-#BirdBrain h2 {text-align: center; font-size: 60px; color: #ffff99; text-shadow: 4px 4px 0px #000; font-family: "Playball", sans-serif; position: absolute; top: 250px; left: 40px; width: 100%; letter-spacing: 0.05em;}
-#HotMonkeyLove {background: url(/assets/HotMonkeyLove.jpg) no-repeat; clear: both; position: relative; display: block; width: 100%; height: 630px; background-size: cover !important;}
-#HotMonkeyLove h2 {text-align: center; font-size: 60px; color: #ffff99; text-shadow: 4px 4px 0px #000; font-family: "Playball", sans-serif; position: absolute; top: 250px; left: 40px; width: 100%; letter-spacing: 0.05em;}
-#ChickenKeyboard {background: url(/assets/ChickenKeyboard.jpg) no-repeat; clear: both; position: relative; display: block; width: 100%; height: 630px; background-size: cover !important;}
-#ChickenKeyboard h2 {text-align: center; font-size: 100px; color: #ffff99; text-shadow: 4px 4px 0px #000; font-family: "Playball", sans-serif; position: absolute; top: 200px; left: 40px; width: 100%; letter-spacing: 0.05em;}
-p {font-family: "Arial"; font-size: 16px; line-height: 25px;}
-.bios {margin-top: -15px;}
-.faq {margin-top: -15px;}
-h2 {font-family: "Arial Black"; font-size: 22px;}
-h3 {font-family: "Arial Black"; font-size: 16px;}
-h4 {font-family: "Arial Black"; font-size: 14px; margin-top: 8px;}
-.contact {font-family: "Arial"; font-size: 16px; line-height: 25px;}
-.features {font-family: "Arial"; font-size: 16px; line-height: 25px;}
-#footer {font-family: "Arial"; font-size: 8px;}
+
+#logo {
+	float: left; margin-right: 40px; margin-top: 8px; color: #998100; font-family: "Arial Black"; font-size: 30px; letter-spacing: 0.05em;
+} 
+
+#Menu {
+	float: left; margin-right: 40px;
+}
+
+#Menu li {
+	float: left; list-style: none; margin-left: 15px; margin-top: 8px; font-family: "Arial"; color: #ffff99; font-size: 14px; letter-spacing: 0.05em;
+}
+
+.button {
+	float: right; margin-left: 40px; margin-top: -32px; font-family: "Arial";
+}
+
+#frmSignup {
+	display: none; position: absolute; left: 50%; z-index: 200; margin-top: 10%; 
+	.content {left: -50%; position: relative; background: #f7da8f; border-radius: 6px; padding: 20px; border: solid 0.5px black; border-bottom: 1.5px solid black; width: 350px; height: 180px;}
+	input {width: 92%; margin-bottom: 10px; font-family: "Arial";}
+	input:focus {box-shadow: none; background: #eee;}
+	.content p {font-family: "Arial Black"; font-size: 14.2px;}
+	#btnSignupSend {font-family: "Arial"; background: #ced3e0; border-bottom: 1.5px solid black;}
+	#btnSignupCancel {font-family: "Arial"; background: #ced3e0; border-bottom: 1.5px solid black;}
+}
+
+#HomeChicken {
+	background: url(/assets/HomeChicken.jpg) no-repeat; clear: both; position: relative; display: block; width: 100%; height: 630px; background-size: cover !important;
+}
+
+#HomeChicken h2 {
+	text-align: center; font-size: 60px; color: #ffff99; text-shadow: 4px 4px 0px #000; font-family: "Playball", sans-serif; position: absolute; top: 250px; left: 40px; width: 100%; letter-spacing: 0.05em;
+}
+
+#ChickenRoad {
+	background: url(/assets/ChickenRoad.jpg) no-repeat; clear: both; position: relative; display: block; width: 100%; height: 630px; background-size: cover !important;
+}
+
+#ChickenRoad h2 {
+	text-align: center; font-size: 60px; color: #ffff99; text-shadow: 4px 4px 0px #000; font-family: "Playball", sans-serif; position: absolute; top: 250px; left: 40px; width: 100%; letter-spacing: 0.05em;
+}
+
+#BirdBrain {
+	background: url(/assets/BirdBrain.jpg) no-repeat; clear: both; position: relative; display: block; width: 100%; height: 630px; background-size: cover !important;
+}
+
+#BirdBrain h2 {
+	text-align: center; font-size: 60px; color: #ffff99; text-shadow: 4px 4px 0px #000; font-family: "Playball", sans-serif; position: absolute; top: 250px; left: 40px; width: 100%; letter-spacing: 0.05em;
+}
+
+#HotMonkeyLove {
+	background: url(/assets/HotMonkeyLove.jpg) no-repeat; clear: both; position: relative; display: block; width: 100%; height: 630px; background-size: cover !important;
+}
+
+#HotMonkeyLove h2 {
+	text-align: center; font-size: 60px; color: #ffff99; text-shadow: 4px 4px 0px #000; font-family: "Playball", sans-serif; position: absolute; top: 250px; left: 40px; width: 100%; letter-spacing: 0.05em;
+}
+
+#ChickenKeyboard {
+	background: url(/assets/ChickenKeyboard.jpg) no-repeat; clear: both; position: relative; display: block; width: 100%; height: 630px; background-size: cover !important;
+}
+
+#ChickenKeyboard h2 {
+	text-align: center; font-size: 100px; color: #ffff99; text-shadow: 4px 4px 0px #000; font-family: "Playball", sans-serif; position: absolute; top: 200px; left: 40px; width: 100%; letter-spacing: 0.05em;
+}
+
+p {
+	font-family: "Arial"; font-size: 16px; line-height: 25px;
+}
+
+.bios {
+	margin-top: -15px;
+}
+
+.faq {
+	margin-top: -15px;
+}
+
+h2 {
+	font-family: "Arial Black"; font-size: 22px;
+}
+
+h3 {
+	font-family: "Arial Black"; font-size: 16px;
+}
+
+h4 {
+	font-family: "Arial Black"; font-size: 14px; margin-top: 8px;
+}
+
+.contact {
+	font-family: "Arial"; font-size: 16px; line-height: 25px;
+}
+
+.features {
+	font-family: "Arial"; font-size: 16px; line-height: 25px;
+}
+
+#footer {
+	font-family: "Arial"; font-size: 8px;
+}

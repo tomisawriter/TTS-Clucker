@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get 'main/faqs'
   get 'main/team'
   get 'main/contact'
+  get 'main/clucks'
+  post 'api/woot'
+  post 'api/signup'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

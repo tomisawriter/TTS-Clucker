@@ -4,28 +4,42 @@
 
 	<head>
   		<title>Clucker</title>
-  		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  		<%= stylesheet_link_tag    'application', media: 'all' %>
+  		<%= javascript_include_tag 'application' %>
   		<%= csrf_meta_tags %>
   		<link href='http://fonts.googleapis.com/css?family=Lobster|Anton|Oswald:400,700|Francois+One|Fjalla+One|Playball' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
 
+    <div id="frmSignup">
+      <div class="content">
+        <p> Prepare to meet your new poultry overlords!</p>
+        <input type="text" id="txtFirst" placeholder="First Name" />
+        <input type="text" id="txtLast" placeholder="Last Name" />
+        <input type="text" id="txtEmail" placeholder="Email Address" />
+        <div class="right" style="margin-top: 10px;">
+          <button id="btnSignupSend">Send</button>
+          <button id="btnSignupCancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+
 		<div id="logo">
 		CLUCKER.COM
 		</div>
 
 		<ul id="Menu">
-		<li> <a href = "http://localhost:3000/main/home">Home</a> </li>
-		<li> <a href = "http://localhost:3000/main/about">What Is Clucker?</a> </li>
-		<li> <a href = "http://localhost:3000/main/team">About Us</a> </li>
-		<li> <a href = "http://localhost:3000/main/faqs">FAQs</a> </li>
-		<li> <a href = "http://localhost:3000/main/contact">Contact Us</a> </li>
-		<li> <a href = "http://localhost:3000/main/index">Index</a> </li>
+			<li> <a href = "http://localhost:3000/main/home">Home</a> </li>
+			<li> <a href = "http://localhost:3000/main/about">What Is Clucker?</a> </li>
+			<li> <a href = "http://localhost:3000/main/team">About Us</a> </li>
+			<li> <a href = "http://localhost:3000/main/faqs">FAQs</a> </li>
+			<li> <a href = "http://localhost:3000/main/contact">Contact Us</a> </li>
 		</ul>
 
 		<button class = "button"> Cluck Here </button>
+
+	</div>
 
 
 
