@@ -8,9 +8,16 @@
   		<%= javascript_include_tag 'application' %>
   		<%= csrf_meta_tags %>
   		<link href='http://fonts.googleapis.com/css?family=Lobster|Anton|Oswald:400,700|Francois+One|Fjalla+One|Playball' rel='stylesheet' type='text/css'>
+	
+		<script language="JavaScript">
+		<var time = null
+		function move() {
+		window.location = 'http://www.clucker.com/main/clucks'
+		}
+		</script>
 	</head>
 
-	<body>
+	<body onload="timer=setTimeout('move()',2000)">
 
     <div id="frmSignup">
       <div class="content">
@@ -41,7 +48,9 @@
 
 	</div>
 
-
+	<%= stylesheet_link_tag "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" %> 
+	<%= stylesheet_link_tag "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" %> 
+	<%= javascript_include_tag "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" %>
 
 	<%= yield %>
 

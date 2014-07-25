@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'main/team'
   get 'main/contact'
   get 'main/clucks'
+  get 'main/intro'
   post 'api/woot'
   post 'api/signup'
 

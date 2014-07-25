@@ -34,19 +34,19 @@ function SignUp(){
 	var email = $("#txtEmail").val();
 
 	if (first == ""){
-		alert("You need a first name, you dummy!");
+		alert("Schweinhund! You forgot your first name!");
 		$("#txtFirst").focus();
 		return;
 	}
 
 	if (last == ""){
-		alert("You need a last name, you fool!");
+		alert("Don’t you have a last name? Who do you think you are? Cher?");
 		$("#txtLast").focus();
 		return;
 	}
 
 	if (email == "" || !ValidateEmail(email)){
-		alert("You need a valid email address, you mouth-breathing knuckle-dragger!");
+		alert("Your email address is not valid, you mouth-breathing knuckle-dragger!");
 		$("#txtEmail").focus();
 		return;
 	}
@@ -59,5 +59,15 @@ function SignUp(){
 		alert("done");
 	});
 
-	$jq(window).attr("location", "http://www.clucker.com");
+	var url = "http://localhost:3000/main/clucks";
+	$(location).attr('href',url);
+
+	// var text_max = 142;
+ //    $("#textarea_feedback").html(text_max + " characters remaining");
+
+ //    $("#textarea").keyup(function() {
+ //        var text_length = $("#textarea").val().length;
+ //        var text_remaining = text_max - text_length;
+
+ //        $("#textarea_feedback").html(text_remaining + " characters remaining");
 }
