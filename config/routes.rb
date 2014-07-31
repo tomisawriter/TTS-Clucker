@@ -8,8 +8,10 @@ Rails.application.routes.draw do
   get 'main/contact'
   get 'main/clucks'
   get 'main/intro'
+  get 'main/sign_up'
   post 'api/woot'
   post 'api/signup'
+  post 'api/persist'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

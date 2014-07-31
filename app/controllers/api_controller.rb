@@ -14,13 +14,30 @@ class ApiController < ApplicationController
 	def signup
 		first = params[:clientFirst] 
 		last = params[:clientLast]
-		email = params[:clientEmail]	
+		email = params[:clientEmail]
+		password = params[:clientPassword]	
 
-		p first + "|" + last + "|" + email	
+		p first + "|" + last + "|" + email + "|" + password
 
-		test = {serverFirst: first, serverLast: last, serverEmail: email}
+		test = {serverFirst: first, serverLast: last, serverEmail: email, serverPassword: password}
 		render json: test
 
 		#redirect_to '/main/about'
 	end
+
+	def persist
+
+    signup = Signup.create(
+      first_name: ,
+      last_name: ,
+      email: ,
+      password: 
+      )
+
+      signup.save
+
+      head :ok
+  
+    end
+
 end

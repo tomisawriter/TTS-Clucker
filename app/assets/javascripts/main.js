@@ -32,6 +32,7 @@ function SignUp(){
 	var first = $("#txtFirst").val();
 	var last = $("#txtLast").val();
 	var email = $("#txtEmail").val();
+	var password = $("#txtPassword").val();
 
 	if (first == ""){
 		alert("Schweinhund! You forgot your first name!");
@@ -51,10 +52,16 @@ function SignUp(){
 		return;
 	}
 
+	if (password == ""){
+		alert("Yo, Einstein, you need to enter a password! Don’t you know how the Internet works? What are you, Amish?");
+		$("#txtPassword").focus();
+		return;
+	}
+
 	$.ajax({
 		url: "/api/signup",
 		type: "POST",
-		data: {clientFirst: first, clientLast: last, clientEmail: email}
+		data: {clientFirst: first, clientLast: last, clientEmail: email, clientPassword: password}
 	}).done(function(data){
 		alert("done");
 	});
