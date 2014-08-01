@@ -59,7 +59,7 @@ function SignUp(){
 	}
 
 	$.ajax({
-		url: "/api/signup",
+		url: "/api/sign_up",
 		type: "POST",
 		data: {clientFirst: first, clientLast: last, clientEmail: email, clientPassword: password}
 	}).done(function(data){

@@ -27,17 +27,30 @@ class ApiController < ApplicationController
 
 	def persist
 
-    signup = Signup.create(
-      first_name: ,
-      last_name: ,
-      email: ,
-      password: 
-      )
+		signup = Sign_up.insert_into(
+      	first_name: "Fred",
+      	last_name: "Sanford",
+      	email: "tvland@aol.com",
+      	password: "1234"
+      	)
 
-      signup.save
+      	signup.save
 
-      head :ok
-  
     end
+
+	# def persist
+
+ #    signup = Sign_up.create(
+ #      first_name: "Fred",
+ #      last_name: "Sanford",
+ #      email: "tvland@aol.com",
+ #      password: "1234"
+ #      )
+
+ #      signup.save
+
+ #      # head :ok
+  
+ #    end
 
 end

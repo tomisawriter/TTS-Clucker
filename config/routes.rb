@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'main/intro'
   get 'main/sign_up'
   post 'api/woot'
-  post 'api/signup'
+  post 'api/sign_up'
   post 'api/persist'
 
   # The priority is based upon order of creation: first created -> highest priority.
