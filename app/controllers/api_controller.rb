@@ -17,26 +17,33 @@ class ApiController < ApplicationController
 		email = params[:clientEmail]
 		password = params[:clientPassword]	
 
-		p first + "|" + last + "|" + email + "|" + password
+		newuser = Sign_ups.new(first_name: first_name, last_name: last_name, email_address: email_address, password: password)
 
-		test = {serverFirst: first, serverLast: last, serverEmail: email, serverPassword: password}
-		render json: test
+		newuser.save
+
+		render json: newuser
+
+		head :ok
+		# p first + "|" + last + "|" + email + "|" + password
+
+		# test = {serverFirst: first, serverLast: last, serverEmail: email, serverPassword: password}
+		# render json: test
 
 		#redirect_to '/main/about'
 	end
 
-	def persist
+	# def persist
 
-		signup = Sign_up.insert_into(
-      	first_name: "Fred",
-      	last_name: "Sanford",
-      	email: "tvland@aol.com",
-      	password: "1234"
-      	)
+	# 	signup = Sign_up.insert_into(
+ #      	first_name: "Fred",
+ #      	last_name: "Sanford",
+ #      	email: "tvland@aol.com",
+ #      	password: "1234"
+ #      	)
 
-      	signup.save
+ #      	signup.save
 
-    end
+ #    end
 
 	# def persist
 
