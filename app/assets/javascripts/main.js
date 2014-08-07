@@ -63,11 +63,11 @@ function SignUp(){
 		type: "POST",
 		data: {clientFirst: first, clientLast: last, clientEmail: email, clientPassword: password}
 	}).done(function(data){
-		alert("done");
+		var url = "http://localhost:3000/main/clucks";
+		$(location).attr('href',url);
 	});
 
-	var url = "http://localhost:3000/main/clucks";
-	$(location).attr('href',url);
+	
 
 	// var text_max = 142;
  //    $("#textarea_feedback").html(text_max + " characters remaining");

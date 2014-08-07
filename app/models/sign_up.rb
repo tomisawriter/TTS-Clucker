@@ -1,2 +1,2 @@
-class SignUp < ActiveRecord::Base
+class Sign_Up < ActiveRecord::Base
 end

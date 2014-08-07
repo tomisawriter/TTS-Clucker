@@ -11,19 +11,35 @@ class ApiController < ApplicationController
 		render json: test
 	end
 
-	def signup
+	def sign_up
 		first = params[:clientFirst] 
 		last = params[:clientLast]
 		email = params[:clientEmail]
 		password = params[:clientPassword]	
 
-		newuser = Sign_ups.new(first_name: first_name, last_name: last_name, email_address: email_address, password: password)
-
+		newuser = Sign_Up.new first_name: first, last_name: last, email_address: email, password: password
 		newuser.save
 
 		render json: newuser
 
-		head :ok
+		# p first + "|" + last + "|" + email + "|" + password
+
+		# test = {serverFirst: first, serverLast: last, serverEmail: email, serverPassword: password}
+		# render json: test
+
+		#redirect_to '/main/about'
+	end
+
+
+	def log_in
+		email = params[:clientEmail]
+		password = params[:clientPassword]	
+
+		loguser = Log_In.new email: email, password: password
+		loguser.save
+
+		render json: loguser
+
 		# p first + "|" + last + "|" + email + "|" + password
 
 		# test = {serverFirst: first, serverLast: last, serverEmail: email, serverPassword: password}
